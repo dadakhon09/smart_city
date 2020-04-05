@@ -94,12 +94,21 @@ REST_FRAMEWORK = {
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'OPTIONS': {
+#             'read_default_file': '/home/dadakhon/Projects/smart_city/my.cnf',
+#         },
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'read_default_file': '/home/dadakhon/Projects/smart_city/my.cnf',
-        },
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'smart_city',
+        'USER': 'dadakhon',
+        'PASSWORD': '1',
     }
 }
 
